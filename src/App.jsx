@@ -2,7 +2,7 @@
 import './App.css'
 import NhatHandleAccordion from './nhat/NhatHandleAccordion'
 import NhatHandleTabChange from './nhat/NhatHandleTabChange'
-
+import NhatHandleBox from './nhat/NhatHandleBox'
 function App() {
 
   return (
@@ -19,6 +19,11 @@ function App() {
       Ex 2: Accordian
     </h2>
     <NhatHandleAccordion/>
+    <br/>
+    <h2 className=" m-10 font-serif text-2xl font-bold font-weight: 600 text-purple-800">
+      Ex 2: Color Box
+    </h2>
+    <NhatHandleBox/>
     </>
   )
 }
