@@ -1,26 +1,23 @@
 import PropTypes from 'prop-types';
 
-function BoxList({number, color, onClick}){
+function BoxList({box, changeBgColor}){
           
       return (
         
-           <li 
-                className="box-list px-20 py-5 m-4 w-8 rounded-md"
-                style={{ backgroundColor: `${color}` }}
-                onClick={onClick}
-            >
-                box #{number}
-            </li>
-
+                <div
+                style={{ backgroundColor: box.bgColor }}
+                onClick={() => changeBgColor(box.baseColor)}
+                >
+                  {box.title}
+                </div>
         
 
         )
 }
 
 BoxList.propTypes = {
-  number: PropTypes.number,
-  color: PropTypes.string,
-  onClick: PropTypes.func,
+  box: PropTypes.object,
+  changeBgColor: PropTypes.func,
 };
   
 export default BoxList;

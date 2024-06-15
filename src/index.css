@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.boxColor {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .boxColor div {
+    height: 50px;
+    width: 45%;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .question_board {
+    display: flex;
+    justify-content: space-between
+  }
+  
+  .question_board .column {
+    margin: 0 15px 50px;
+    width: 33%
+  }
+  
+  .question_board .boards {
+    display: grid;
+    row-gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .question_board .question {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .question__status {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin-right: 5px
+  }
+  
+  .question__status--CORRECT {
+    background-color: green
+  }
+  
+  .question__status--INCORRECT {
+    background-color: red
+  }
+  
+  .question__status--PARTIALLY_CORRECT {
+    background-color: #000
+  }
+  
+  .question__status--none {
+    background-color: #dcdcdc
+  }
+  .traffic_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+.traffic-light-container--vertical {
+  flex-direction: column;
+}
+.traffic-light-container {
+  background-color: #000;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+}
+traffic-light {
+  --size:50px;
+  background-color: #555;
+  border-radius: 10px;
+  height: var(--size);
+  width: var(--size);
+}
