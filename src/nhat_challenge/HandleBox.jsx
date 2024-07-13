@@ -28,7 +28,7 @@ function NhatHandleBox(){
           },[ currentColor])
 
     return (
-        <div>
+        <div >
             <div className="boxColor ">
                 {colorBoxs.map((box) => (
                     
